@@ -7,6 +7,14 @@ then
     sudo apt upgrade
 fi
 
+# Gnome Tweaks
+read -p "Install gnome tweaks? [y/n] " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    sudo apt gnome-tweaks
+fi
+
 # Git and Setup
 read -p "Github Installation & Setup [y/n] " -n 1 -r
 echo
