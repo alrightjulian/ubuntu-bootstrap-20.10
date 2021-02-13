@@ -12,7 +12,6 @@ read -p "Github Installation & Setup [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo "hello?"
     sudo apt install git
     echo "Enter email address for git"
     read GIT_EMAIL
